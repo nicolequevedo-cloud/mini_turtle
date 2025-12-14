@@ -1,7 +1,8 @@
 # mini_turtle
 
 Codigo:
-'''python  
+
+``` 
 import turtle
 
 # ESCALERA
