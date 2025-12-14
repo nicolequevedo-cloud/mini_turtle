@@ -30,7 +30,7 @@ t.speed(1)
 
 #  CORAZÓN
 pen = turtle.Turtle()
-pen.speed (1)
+pen.speed (3)
 pen.pencolor("black")
 pen.fillcolor("white")
 
