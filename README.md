@@ -5,7 +5,6 @@ Codigo:
 ```
 import turtle
 
-# PANTALLA 
 screen = turtle.Screen()
 screen.bgcolor("white")
 
