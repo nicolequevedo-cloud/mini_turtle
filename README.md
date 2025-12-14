@@ -2,56 +2,62 @@
 
 Codigo:
 
-``` 
+```
 import turtle
 
-# ESCALERA
+# PANTALLA 
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+#ESCALERA -
 t = turtle.Turtle()
-t.speed (1)
-t.forward(90)
-t.right(90)
-t.forward(60)
+t.speed(2)
 
-t.left(90)
-t.forward(90)
+posicion_x = 0
 
-t.right(90)
-t.forward(60)
+def adelante(distancia):
+    global posicion_x
+    t.forward(distancia)
+    posicion_x += distancia
 
-t.left(90)
-t.forward(90)
+def abajo(distancia):
+    t.right(90)
+    t.forward(distancia)
+    t.left(90)
 
-t.right(90)
-t.forward(60)
+def dibujar_escalera():
+    for _ in range(3):
+        adelante(90)
+        abajo(60)
 
+dibujar_escalera()
 
-t.reset()
-t.speed(1)
-
-#  CORAZÓN
+#Corazon 
 pen = turtle.Turtle()
-pen.speed (3)
-pen.pencolor("black")
-pen.fillcolor("white")
+pen.speed(3)
+pen.color("black", "white")
+
+# MUY IMPORTANTE
+pen.penup()
+pen.goto(-50, -50)   # posición visible
+pen.setheading(0)    # dirección correcta
+pen.pendown()
 
 pen.begin_fill()
 pen.left(140)
 pen.forward(113)
 
-for i in range(200):
+for _ in range(200):
     pen.right(1)
     pen.forward(1)
 
 pen.left(120)
 
-for i in range(200):
+for _ in range(200):
     pen.right(1)
     pen.forward(1)
 
 pen.forward(112)
 pen.end_fill()
-'''
-
-
 
 turtle.done()
