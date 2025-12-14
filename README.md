@@ -31,6 +31,10 @@ def dibujar_escalera():
 
 dibujar_escalera()
 
+# BORRAR SOLO LA ESCALERA
+t.clear()
+t.hideturtle()
+
 #Corazon 
 pen = turtle.Turtle()
 pen.speed(3)
