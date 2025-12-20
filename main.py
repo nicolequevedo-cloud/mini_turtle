@@ -1,12 +1,9 @@
-from mini_turtle import adelante, abajo, reiniciar
-import turtle
+from mini_tracker import iniciar_tarea, detener_tarea, consultar_total
 
-for _ in range(5):
-    adelante(50)
-    abajo(30)
+iniciar_tarea("Estudiar Python")
+detener_tarea(2.5)
 
-reiniciar()
+iniciar_tarea("Hacer tarea")
+detener_tarea(1.5)
 
-adelante(200)
-
-turtle.done()
+print(f"Tiempo total trabajado: {consultar_total()} horas")

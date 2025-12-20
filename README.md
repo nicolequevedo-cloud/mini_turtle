@@ -1,7 +1,7 @@
-Mini Turtle – Práctica Python
+# mini_tracker (Versión Funcional)
 
-Lenguaje: Python 3
+Este proyecto implementa un rastreador de tiempo usando programación funcional
+con estado global.
 
-Tema: Modularidad y Programación Orientada a Objetos
-
-No utiliza librerías externas
+La variable global `tiempo_total_acumulado` se modifica mediante la palabra
+clave `global`.
